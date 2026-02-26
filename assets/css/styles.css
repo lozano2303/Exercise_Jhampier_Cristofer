@@ -140,3 +140,7 @@ body {
         text-align: center;
     }
 }
+img{
+    height: 80px;
+    float: left;
+}
