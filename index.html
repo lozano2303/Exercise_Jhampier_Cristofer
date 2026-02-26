@@ -1,11 +1,123 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Blog Educativo - Etiquetas HTML</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
-    
+    <header class="main-header">
+        <div class="container">
+            <h1>Etiquetas HTML</h1>
+            <p class="subtitle">Aprende HTML de forma práctica</p>
+        </div>
+    </header>
+
+    <nav class="main-nav">
+        <div class="container">
+            <ul class="nav-list">
+                <li><a href="#inicio" class="nav-link active">Inicio</a></li>
+                <li><a href="#etiquetas" class="nav-link">Etiquetas</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <div class="container">
+            
+            <section id="inicio" class="category-section active">
+                <h2>Bienvenido</h2>
+                <p>Este blog explica 5 etiquetas HTML fundamentales con ejemplos prácticos.</p>
+                <ul>
+                    <li>✅ 20 etiquetas HTML explicadas</li>
+                    <li>✅ Ejemplos funcionales</li>
+                    <li>✅ Buenas prácticas</li>
+                </ul>
+            </section>
+
+            <section id="etiquetas" class="category-section">
+                <h2>🏷️ Etiquetas HTML</h2>
+                
+                <!-- Etiqueta 1: HEADER -->
+                <div class="tag-card">
+                    <h3><span class="tag-name">&lt;header&gt;</span></h3>
+                    <p><strong>Definición:</strong> Define el encabezado de un documento o sección.</p>
+                    <pre>&lt;header&gt;
+  &lt;h1&gt;Título&lt;/h1&gt;
+&lt;/header&gt;</pre>
+                    <div class="example-demo">
+                        <header style="background: #667eea; color: white; padding: 1rem; border-radius: 4px;">
+                            <h1 style="margin: 0;">Mi Sitio Web</h1>
+                        </header>
+                    </div>
+                    <p><strong>Buenas prácticas:</strong> Usar un header principal por página.</p>
+                </div>
+
+                <!-- Etiqueta 2: P -->
+                <div class="tag-card">
+                    <h3><span class="tag-name">&lt;p&gt;</span></h3>
+                    <p><strong>Definición:</strong> Define un párrafo de texto.</p>
+                    <pre>&lt;p&gt;Este es un párrafo.&lt;/p&gt;</pre>
+                    <div class="example-demo">
+                        <p>Este es un ejemplo de párrafo en HTML.</p>
+                    </div>
+                    <p><strong>Buenas prácticas:</strong> No usar solo para crear espacios.</p>
+                </div>
+
+                <!-- Etiqueta 3: UL -->
+                <div class="tag-card">
+                    <h3><span class="tag-name">&lt;ul&gt;</span></h3>
+                    <p><strong>Definición:</strong> Define una lista desordenada con viñetas.</p>
+                    <pre>&lt;ul&gt;
+  &lt;li&gt;Item 1&lt;/li&gt;
+  &lt;li&gt;Item 2&lt;/li&gt;
+&lt;/ul&gt;</pre>
+                    <div class="example-demo">
+                        <ul>
+                            <li>JavaScript</li>
+                            <li>Python</li>
+                            <li>Java</li>
+                        </ul>
+                    </div>
+                    <p><strong>Buenas prácticas:</strong> Usar cuando el orden no importa.</p>
+                </div>
+
+                <!-- Etiqueta 4: INPUT -->
+                <div class="tag-card">
+                    <h3><span class="tag-name">&lt;input&gt;</span></h3>
+                    <p><strong>Definición:</strong> Crea un campo de entrada para datos del usuario.</p>
+                    <pre>&lt;input type="text" placeholder="Nombre"&gt;</pre>
+                    <div class="example-demo">
+                        <input type="text" placeholder="Escribe tu nombre" style="padding: 0.5rem; border: 1px solid #ddd; border-radius: 4px; width: 100%; max-width: 300px;">
+                    </div>
+                    <p><strong>Buenas prácticas:</strong> Siempre incluir atributo 'name'.</p>
+                </div>
+
+                <!-- Etiqueta 5: IMG -->
+                <div class="tag-card">
+                    <h3><span class="tag-name">&lt;img&gt;</span></h3>
+                    <p><strong>Definición:</strong> Inserta una imagen en el documento.</p>
+                    <pre>&lt;img src="imagen.jpg" alt="Descripción"&gt;</pre>
+                    <div class="example-demo">
+                        <div style="width: 150px; height: 100px; background: linear-gradient(135deg, #667eea, #764ba2); border-radius: 8px; display: flex; align-items: center; justify-content: center; color: white;">
+                            🖼️ Imagen
+                        </div>
+                    </div>
+                    <p><strong>Buenas prácticas:</strong> Siempre incluir atributo 'alt'.</p>
+                </div>
+
+            </section>
+
+        </div>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <p>&copy; 2026 Blog Educativo HTML - Jhampier Cristofer</p>
+        </div>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
 </body>
 </html>
