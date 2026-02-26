@@ -18,7 +18,14 @@
         <div class="container">
             <ul class="nav-list">
                 <li><a href="#inicio" class="nav-link active">Inicio</a></li>
-                <li><a href="#etiquetas" class="nav-link">Etiquetas</a></li>
+                <li><a href="#estructura" class="nav-link">Estructura</a></li>
+                <li><a href="#texto" class="nav-link">Texto</a></li>
+                <li><a href="#listas" class="nav-link">Listas</a></li>
+                <li><a href="#formularios" class="nav-link">Formularios</a></li>
+                <li><a href="#tablas" class="nav-link">Tablas</a></li>
+                <li><a href="#multimedia" class="nav-link">Multimedia</a></li>
+                <li><a href="#enlaces" class="nav-link">Enlaces</a></li>
+                <li><a href="#semantica" class="nav-link">Semántica</a></li>
             </ul>
         </div>
     </nav>
@@ -28,7 +35,7 @@
             
             <section id="inicio" class="category-section active">
                 <h2>Bienvenido</h2>
-                <p>Este blog explica 5 etiquetas HTML fundamentales con ejemplos prácticos.</p>
+                <p>Este blog explica 20 etiquetas HTML fundamentales con ejemplos prácticos.</p>
                 <ul>
                     <li>✅ 20 etiquetas HTML explicadas</li>
                     <li>✅ Ejemplos funcionales</li>
@@ -37,7 +44,7 @@
             </section>
 
             <section id="etiquetas" class="category-section">
-                <h2>🏷️ Etiquetas HTML</h2>
+                <h2> Etiquetas HTML</h2>
                 
                 <!-- Etiqueta 1: HEADER -->
                 <div class="tag-card">
@@ -101,10 +108,182 @@
                     <pre>&lt;img src="imagen.jpg" alt="Descripción"&gt;</pre>
                     <div class="example-demo">
                         <div style="width: 150px; height: 100px; background: linear-gradient(135deg, #667eea, #764ba2); border-radius: 8px; display: flex; align-items: center; justify-content: center; color: white;">
-                            🖼️ Imagen
+                             Imagen
                         </div>
                     </div>
                     <p><strong>Buenas prácticas:</strong> Siempre incluir atributo 'alt'.</p>
+                </div>
+
+            </section>
+
+            <section id="estructura" class="category-section">
+                <h2> Estructura</h2>
+                
+                <!-- Etiqueta: NAV -->
+                <div class="tag-card">
+                    <h3><span class="tag-name">&lt;nav&gt;</span></h3>
+                    <p><strong>Definición:</strong> Define un conjunto de enlaces de navegación.</p>
+                    <pre>&lt;nav&gt;
+  &lt;a href="/"&gt;Inicio&lt;/a&gt;
+&lt;/nav&gt;</pre>
+                    <div class="example-demo">
+                        <nav style="background: #f0f0f0; padding: 0.5rem; border-radius: 4px;">
+                            <a href="#" style="margin-right: 1rem;">Inicio</a>
+                            <a href="#">Acerca de</a>
+                        </nav>
+                    </div>
+                    <p><strong>Buenas prácticas:</strong> Usar para menús principales.</p>
+                </div>
+
+                <!-- Etiqueta: FOOTER -->
+                <div class="tag-card">
+                    <h3><span class="tag-name">&lt;footer&gt;</span></h3>
+                    <p><strong>Definición:</strong> Define el pie de página.</p>
+                    <pre>&lt;footer&gt;Pie&lt;/footer&gt;</pre>
+                    <div class="example-demo">
+                        <footer style="background: #343a40; color: white; padding: 0.5rem; border-radius: 4px;">
+                            Pie de página
+                        </footer>
+                    </div>
+                    <p><strong>Buenas prácticas:</strong> Incluir información de contacto.</p>
+                </div>
+
+            </section>
+
+            <section id="texto" class="category-section">
+                <h2> Texto</h2>
+                
+                <!-- Etiqueta: SPAN -->
+                <div class="tag-card">
+                    <h3><span class="tag-name">&lt;span&gt;</span></h3>
+                    <p><strong>Definición:</strong> Contenedor en línea para texto.</p>
+                    <pre>&lt;span&gt;texto&lt;/span&gt;</pre>
+                    <div class="example-demo">
+                        <p>Texto <span style="background: yellow;">resaltado</span> normal</p>
+                    </div>
+                    <p><strong>Buenas prácticas:</strong> Usar para estilos en línea.</p>
+                </div>
+
+            </section>
+
+            <section id="listas" class="category-section">
+                <h2> Listas</h2>
+                
+                <!-- Etiqueta: OL -->
+                <div class="tag-card">
+                    <h3><span class="tag-name">&lt;ol&gt;</span></h3>
+                    <p><strong>Definición:</strong> Lista ordenada con números.</p>
+                    <pre>&lt;ol&gt;
+  &lt;li&gt;Item&lt;/li&gt;
+&lt;/ol&gt;</pre>
+                    <div class="example-demo">
+                        <ol style="margin: 0;">
+                            <li>Primero</li>
+                            <li>Segundo</li>
+                        </ol>
+                    </div>
+                    <p><strong>Buenas prácticas:</strong> Usar para secuencias.</p>
+                </div>
+
+            </section>
+
+            <section id="formularios" class="category-section">
+                <h2> Formularios</h2>
+                
+                <!-- Etiqueta: FORM -->
+                <div class="tag-card">
+                    <h3><span class="tag-name">&lt;form&gt;</span></h3>
+                    <p><strong>Definición:</strong> Define un formulario.</p>
+                    <pre>&lt;form&gt;
+  &lt;input&gt;
+&lt;/form&gt;</pre>
+                    <div class="example-demo">
+                        <form style="background: #f8f9fa; padding: 1rem; border-radius: 4px;">
+                            <input type="text" placeholder="Nombre" style="padding: 0.5rem; border: 1px solid #ddd; border-radius: 4px; width: 100%; max-width: 200px;">
+                        </form>
+                    </div>
+                    <p><strong>Buenas prácticas:</strong> Usar POST para datos sensibles.</p>
+                </div>
+
+                <!-- Etiqueta: BUTTON -->
+                <div class="tag-card">
+                    <h3><span class="tag-name">&lt;button&gt;</span></h3>
+                    <p><strong>Definición:</strong> Define un botón.</p>
+                    <pre>&lt;button&gt;Click&lt;/button&gt;</pre>
+                    <div class="example-demo">
+                        <button style="padding: 0.5rem 1rem; background: #667eea; color: white; border: none; border-radius: 4px;">Botón</button>
+                    </div>
+                    <p><strong>Buenas prácticas:</strong> Especificar type.</p>
+                </div>
+
+            </section>
+
+            <section id="tablas" class="category-section">
+                <h2> Tablas</h2>
+                
+                <!-- Etiqueta: TABLE -->
+                <div class="tag-card">
+                    <h3><span class="tag-name">&lt;table&gt;</span></h3>
+                    <p><strong>Definición:</strong> Define una tabla.</p>
+                    <pre>&lt;table&gt;
+  &lt;tr&gt;&lt;td&gt;Celda&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;</pre>
+                    <div class="example-demo">
+                        <table style="width: 100%; border-collapse: collapse;">
+                            <tr><td style="border: 1px solid #ddd; padding: 0.5rem;">Celda</td></tr>
+                        </table>
+                    </div>
+                    <p><strong>Buenas prácticas:</strong> Usar para datos tabulares.</p>
+                </div>
+
+            </section>
+
+            <section id="multimedia" class="category-section">
+                <h2> Multimedia</h2>
+                
+                <!-- Etiqueta: AUDIO -->
+                <div class="tag-card">
+                    <h3><span class="tag-name">&lt;audio&gt;</span></h3>
+                    <p><strong>Definición:</strong> Inserta audio.</p>
+                    <pre>&lt;audio controls&gt;&lt;/audio&gt;</pre>
+                    <div class="example-demo">
+                        <audio controls style="width: 100%;"></audio>
+                    </div>
+                    <p><strong>Buenas prácticas:</strong> Incluir controles.</p>
+                </div>
+
+            </section>
+
+            <section id="enlaces" class="category-section">
+                <h2> Enlaces</h2>
+            
+                <!-- Etiqueta: A -->
+                <div class="tag-card">
+                    <h3><span class="tag-name">&lt;a&gt;</span></h3>
+                    <p><strong>Definición:</strong> Define un hipervínculo.</p>
+                    <pre>&lt;a href="url"&gt;Enlace&lt;/a&gt;</pre>
+                    <div class="example-demo">
+                        <a href="#" style="color: #667eea;">Enlace de ejemplo</a>
+                    </div>
+                    <p><strong>Buenas prácticas:</strong> Usar texto descriptivo.</p>
+                </div>
+
+            </section>
+
+            <section id="semantica" class="category-section">
+                <h2> Semántica</h2>
+                
+                <!-- Etiqueta: MAIN -->
+                <div class="tag-card">
+                    <h3><span class="tag-name">&lt;main&gt;</span></h3>
+                    <p><strong>Definición:</strong> Contenido principal.</p>
+                    <pre>&lt;main&gt;Contenido&lt;/main&gt;</pre>
+                    <div class="example-demo">
+                        <main style="background: #fff3cd; padding: 1rem; border-radius: 4px;">
+                            Contenido Principal
+                        </main>
+                    </div>
+                    <p><strong>Buenas prácticas:</strong> Solo uno por página.</p>
                 </div>
 
             </section>
