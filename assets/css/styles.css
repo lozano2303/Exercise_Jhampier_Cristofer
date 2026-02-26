@@ -144,3 +144,9 @@ img{
     height: 80px;
     float: left;
 }
+img.Two{
+    height: 150px;
+    float: none;
+    display: block;
+    margin: 0 auto;
+}
